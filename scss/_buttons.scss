@@ -164,6 +164,12 @@ $skip-btn-variant-colors: false !default;
     }
   }
 }
+
+@each $color, $value in $theme-colors {
+  .btn-soft-#{$color} {
+    @include button-soft-variant($value);
+  }
+}
 // scss-docs-end btn-variant-loops
 
 
