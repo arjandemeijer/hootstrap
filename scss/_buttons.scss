@@ -127,6 +127,10 @@
 // Alternate buttons
 //
 
+// We skip the bootstrap buttons in fav of our own.
+$skip-btn-variant-colors: false !default;
+
+@if not $skip-btn-variant-colors {
 // scss-docs-start btn-variant-loops
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
