@@ -308,9 +308,69 @@ $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
+// Bootstrap contextual colors
+// Primary colors
+//$primary:						#1B84FF !default;
+$primary: red !default;
+$primary-active:				#056EE9 !default;
+$primary-light: 				#E9F3FF !default;
+$primary-clarity: 				rgba(#1B84FF, 0.2) !default;
+$primary-inverse: 				$white !default; 
+
+// Secondary colors
+$secondary: 					#F9F9F9 !default;
+$secondary-active: 				$gray-300 !default;
+$secondary-light: 				#F9F9F9 !default;
+$secondary-clarity:				rgba(#F9F9F9, 0.2) !default; 
+$secondary-inverse:				$gray-800 !default; 
+
+// Light colors
+$light: 						$gray-100 !default;
+$light-active: 					#FCFCFC !default;
+$light-light: 					#ffffff !default;
+$light-clarity: 				rgba($white, 0.2) !default;
+$light-inverse:					$gray-800 !default;
+
+// Success colors
+$success: 						#17C653 !default; 
+$success-active: 				#04B440 !default;
+$success-light: 				#DFFFEA !default;
+$success-clarity: 				rgba(#17C653, 0.2) !default;
+$success-inverse: 				$white !default;
+
+// Info colors
+$info: 							#7239EA !default; 
+$info-active: 					#5014D0 !default;
+$info-light: 					#F8F5FF !default;
+$info-clarity: 					rgba(#7239EA, 0.2) !default;
+$info-inverse: 					$white !default;
+
+// Warning colors
+$warning: 						#F6C000 !default; 
+$warning-active: 				#DEAD00 !default;
+$warning-light: 				#FFF8DD !default;
+$warning-clarity: 				rgba(#F6C000, 0.2) !default;
+$warning-inverse: 				$white !default;
+
+// Danger colors
+$danger: 						#F8285A !default; 
+$danger-active: 				#D81A48 !default;
+$danger-light: 					#FFEEF3 !default;
+$danger-clarity: 				rgba(#F8285A, 0.2) !default;
+$danger-inverse: 				$white !default;
+
+// Dark colors
+$dark: 							#1E2129 !default;
+$dark-active: 					#111318 !default;
+$dark-light: 					#F9F9F9 !default; 
+$dark-clarity: 					rgba(#1E2129, 0.2) !default;
+$dark-inverse: 					$white !default;
+
+$kees: #1B84FF !default;
+
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
+  "primary":    $kees,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -1634,12 +1694,12 @@ $figure-caption-color:              var(--#{$prefix}secondary-color) !default;
 $breadcrumb-font-size:              null !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
-$breadcrumb-item-padding-x:         .5rem !default;
+$breadcrumb-item-padding-x:         .67rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
 $breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                quote("|") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables

@@ -25,6 +25,9 @@ Bootstrap includes several button variants, each serving its own semantic purpos
 <Example code={[...getData('theme-colors').map((themeColor) => `<button type="button" class="btn btn-${themeColor.name}">${themeColor.title}</button>`), `
 <button type="button" class="btn btn-link">Link</button>`]} />
 
+<Example code={[...getData('theme-colors').map((themeColor) => `<button type="button" class="btn btn-soft-${themeColor.name}">${themeColor.title}</button>`), `
+<button type="button" class="btn btn-link">Link</button>`]} />
+
 <Callout name="warning-color-assistive-technologies" />
 
 ## Disable text wrapping
